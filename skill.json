@@ -4,39 +4,42 @@
       "publishingInformation": {
         "locales": {
           "en-US": {
-            "summary": "My Flash Briefing.",
-            "examplePhrases": [],
+            "summary": "Mediterranean Diet Daily.",
+            "examplePhrases": ["Alexa, what's my flash briefing?", "Alexa, open Mediterranean Diet Daily", "Alexa, what's in the news?"],
             "keywords": [
-              "daily",
-              "swell",
-              "quote"
+              "mediterranean",
+              "diet",
+              "daily"
             ],
-            "name": "My Flash Briefing",
-            "description": "Designed for you. Everyday you'll hear a swell quote.\n\nPlease leave a 5-star review if you love this Skill. Your 5-star reviews encourage us to keep making more great Skills!",
-          "smallIconUri": "https://path/to/you-skill-icon-108.png",
-          "largeIconUri": "https://path/to/you-skill-icon-512.png"
+            "name": "Mediterranean Diet Daily",
+            "description": "Everyday you will hear ideas for Breakfast, Lunch and Dinner to help provide inspiration and motivation for your Mediterranean inspired lifestyle.
+            \n\nThe health benefits to the Mediterranean diet are unparalelled and it is considered by many nutrition experts to be one of the most heart-healthy ways of eating there is. The basis of the Mediterranean diet is loaded with anti-inflammatory foods and built upon plant-based foods and healthy fats.
+            \n\nBased on much research, the Mediterranean diet can protect against the development of heart disease, depression, cancer, type-2 diabetes, obesity, dementia, Alzheimer’s and Parkinson’s. This daily flash briefing is simply designed to provide meal plan inspiration and to help keep you on track for your day ahead, so you can reap the health benefits later.
+            \n\nPlease leave a 5-star review if you love this Skill. Your 5-star reviews encourage us to keep making more great Skills!",
+          "smallIconUri": "https://s3.amazonaws.com/mediterraneandietdaily/med_diet_logo_108.png",
+          "largeIconUri": "https://s3.amazonaws.com/mediterraneandietdaily/med_diet_logo_512.png"
           }
         },
         "isAvailableWorldwide": true,
-        "testingInstructions": "none",
-        "category": "SELF_IMPROVEMENT",
+        "testingInstructions": "This is a flash briefing skill, designed to give a different meal plan for each day of the year.",
+        "category": "COOKING_AND_RECIPE",
         "distributionCountries": []
       },
       "apis": {
         "flashBriefing": {
           "locales": {
             "en-US": {
-              "customErrorMessage": "Today's quote is unavailable at the moment.",
+              "customErrorMessage": "Today's Mediterranean Diet ideas are unavailable at the moment.",
               "feeds": [
                 {
                   "isDefault": true,
-                  "vuiPreamble": "From My Flash Briefing...",
-                  "imageUri": "https://path/to/you-skill-icon-512.png",
-                  "name": "My Flash Briefing Quote",
+                  "vuiPreamble": "From Mediterranean Diet Daily...",
+                  "imageUri": "https://s3.amazonaws.com/mediterraneandietdaily/med_diet_logo_512.png",
+                  "name": "Mediterranean Diet Daily",
                   "genre": "Lifestyle",
                   "updateFrequency": "DAILY",
                   "contentType": "Text",
-                  "url": "https://aaaaaaaaaa.execute-api.us-east-1.amazonaws.com/prod/alexaFBSkillQuoteToday"
+                  "url": "arn:aws:execute-api:us-east-1:189754949681:w0ytqlmzbf/*/*/alexaFBSkillQuoteToday"
                 }
               ]
             }
